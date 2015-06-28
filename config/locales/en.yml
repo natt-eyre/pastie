@@ -17,3 +17,8 @@ en:
 
   titles:
     application: Pastie
+
+  helpers:
+    submit:
+      paste:
+        create: "Paste it!"
