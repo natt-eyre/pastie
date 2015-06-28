@@ -15,7 +15,7 @@ feature "user creates a paste" do
   end
 
   def submit_paste(name:, contents:)
-    visit root_path
+    visit root_path(as: create(:user))
     fill_in "Name", with: name
     fill_in "Contents", with: contents
     click_on "Paste it!"

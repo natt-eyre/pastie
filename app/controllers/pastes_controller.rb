@@ -1,4 +1,6 @@
 class PastesController < ApplicationController
+  before_filter :require_login
+
   def new
     @paste = Paste.new
   end
